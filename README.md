@@ -1,6 +1,6 @@
 # NEKOIntel
 
-[ English ] < -- > [ [简体中文 (Simplified Chinese)](cn.md) ]
+[ English ] < -- > [ [简体中文 (Simplified Chinese)](README_cn.md) ]
 
 *"Recon, made easy".*
 
