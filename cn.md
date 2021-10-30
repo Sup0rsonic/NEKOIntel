@@ -1,6 +1,6 @@
 # NEKOIntel
 
-[ [English](readme.md) ] < -- > [ 简体中文 ]
+[ [English](README.md) ] < -- > [ 简体中文 ]
 
 *"侦察，更加简单。".*
 
