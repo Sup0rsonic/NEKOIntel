@@ -1,3 +1,5 @@
+![NEKOIntel Logo](nekointel-logo.png)
+
 # NEKOIntel
 
 [ [English](README.md) ] < -- > [ 简体中文 ]
