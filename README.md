@@ -59,7 +59,7 @@ And some peek else for curious users that wonders how does the output looks like
 sup0rsonic.github.io ( 185.199.110.153, 0 history(ies) found. )
 |   Tags: Github, Github Pages, Github pages blog, Hexo, Nodejs, Ruby
 |   Fidelity(f): Github Pages(100%), Blog(75%), Hexo(100%)	
-|	Whois: MarkMonitor Inc., CA, US.
+|   Whois: MarkMonitor Inc., CA, US.
 Root domain: github.io ( 53 Subdomains found )
 0 Subdomain(s) found.
 1 IP Address(es) found.
