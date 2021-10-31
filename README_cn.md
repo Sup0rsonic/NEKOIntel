@@ -47,3 +47,30 @@ CHAIN0被保存到了 presets/General.json.
 猫猫正在按下大红按钮...
 ...
 ```
+
+和一点扫描结果，为了一些好奇的用户。
+
+```
+[NEKOIntel] CHAIN0 $ fire
+[ 信息 ] 猫猫正在按下大红按钮...
+[ 信息 ] 开始对1个域名的侦察。
+[ 信息 ] 发射CHAIN0 { subdomain_google/subdomain/sectrails/subdomain_recondev -> purge -> host_recon_shodan/host_recon_nmap/host_recon_dummyscan -> purge -> domain_fidelity_check/domain_tagger -> purge -> output_text }.
+...
+[ 信息 ] 猫猫正在最终化结果。
+sup0rsonic.github.io ( 185.199.110.153, 找到了0个历史解析。 )
+|   标签: Github, Github Pages, Github pages blog, Hexo, Nodejs, Ruby
+|   置信度(f): Github Pages(100%), Blog(75%), Hexo(100%)	
+|	Whois查询: MarkMonitor Inc., CA, US.
+上级域名: github.io ( 找到了53个子域名。 )
+针对域名找到了1个IP地址。
+IP地址: 185.199.110.153
+|	状态: [ 在线, 主要地址 ]
+|	标签: Github, 网站主机
+|	置信度(f): Github(100%), 网站主机(100%), 反向代理(30%), HTTPS(100%)
+|	找到了2个开放端口。
+|	|   [ 开放 ] 80 HTTP, http-proxy, Varnish
+|	|	[ 开放 ] 443 HTTPS ssl/https GitHub.com
+|
+[ 成功 ] 工具链运行结束。
+[ NEKOIntel ] CHAIN0 $
+```
