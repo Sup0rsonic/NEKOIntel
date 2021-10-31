@@ -69,7 +69,7 @@ IP地址: 185.199.110.153
 |	置信度(f): Github(100%), 网站主机(100%), 反向代理(30%), HTTPS(100%)
 |	找到了2个开放端口。
 |	|   [ 开放 ] 80 HTTP, http-proxy, Varnish
-|	|	  [ 开放 ] 443 HTTPS ssl/https GitHub.com
+|	|   [ 开放 ] 443 HTTPS ssl/https GitHub.com
 |
 [ 成功 ] 工具链运行结束。
 [ NEKOIntel ] CHAIN0 $
