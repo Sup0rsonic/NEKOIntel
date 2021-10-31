@@ -60,16 +60,16 @@ CHAIN0被保存到了 presets/General.json.
 sup0rsonic.github.io ( 185.199.110.153, 找到了0个历史解析。 )
 |   标签: Github, Github Pages, Github pages blog, Hexo, Nodejs, Ruby
 |   置信度(f): Github Pages(100%), Blog(75%), Hexo(100%)	
-|	Whois查询: MarkMonitor Inc., CA, US.
+|   Whois查询: MarkMonitor Inc., CA, US.
 上级域名: github.io ( 找到了53个子域名。 )
 针对域名找到了1个IP地址。
 IP地址: 185.199.110.153
-|	状态: [ 在线, 主要地址 ]
-|	标签: Github, 网站主机
-|	置信度(f): Github(100%), 网站主机(100%), 反向代理(30%), HTTPS(100%)
-|	找到了2个开放端口。
-|	|   [ 开放 ] 80 HTTP, http-proxy, Varnish
-|	|   [ 开放 ] 443 HTTPS ssl/https GitHub.com
+|   状态: [ 在线, 主要地址 ]
+|   标签: Github, 网站主机
+|   置信度(f): Github(100%), 网站主机(100%), 反向代理(30%), HTTPS(100%)
+|   找到了2个开放端口。
+|   |   [ 开放 ] 80 HTTP, http-proxy, Varnish
+|   |   [ 开放 ] 443 HTTPS ssl/https GitHub.com
 |
 [ 成功 ] 工具链运行结束。
 [ NEKOIntel ] CHAIN0 $
