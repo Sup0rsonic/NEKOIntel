@@ -70,7 +70,7 @@ IP Address: 185.199.110.153
 |   2 Open port(s) found.
 |   |   [ OPEN ] 80 HTTP, http-proxy, Varnish
 |   |   [ OPEN ] 443 HTTPS ssl/https GitHub.com
-
+|
 [  OK  ] Chain complete.
 [ NEKOIntel ] CHAIN0 $
 ```
