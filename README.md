@@ -69,7 +69,7 @@ IP Address: 185.199.110.153
 |	Fidelity(f): Github(100%), WebHosting(100%), Reverse Proxy(30%), HTTPS(100%)
 |	2 Open port(s) found.
 |	|   [ OPEN ] 80 HTTP, http-proxy, Varnish
-|	|	[ OPEN ] 443 HTTPS ssl/https GitHub.com
+|	|   [ OPEN ] 443 HTTPS ssl/https GitHub.com
 |
 [  OK  ] Chain complete.
 [ NEKOIntel ] CHAIN0 $
