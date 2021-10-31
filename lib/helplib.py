@@ -37,4 +37,5 @@ class HelpLib:
         return
 
 
-
+if __name__ == '__main__':
+    helplib = HelpLib()
