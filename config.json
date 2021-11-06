@@ -1,0 +1,13 @@
+{
+  "NEKOIntel_version": "1.3.0.1.11",
+  "NEKOIntel_codename": "Malkuth",
+  "plugin_db_name": "nekointel.github.io/plugins",
+  "presets_db_name": "nekointel.github.io/presets",
+  "sqlite_db_name": "NEKOIntel.dat",
+  "api_keys": {
+    "security_trails": null,
+    "recon_dev": null,
+    "shodan": null
+  },
+  "splash_screen_file_name": "NEKOIntel.splashscreen"
+}

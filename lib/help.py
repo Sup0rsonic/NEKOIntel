@@ -5,7 +5,8 @@
 # 祝好运，玩的开心。
 
 HELP_CHAIN = [
-    '''NEKOIntel Chain.
+    '''
+NEKOIntel Chain.
 The basic structure of NEKOIntel.
 Is a set of modules/tools chained together to an unified output though a pipeline.
 chain [new del] [modules/CHAIN_ID]
@@ -49,7 +50,8 @@ chain [chain_id] [arm fire]
 ]
 
 HELP_HELP = [
-    '''NEKOIntel Help
+    '''
+NEKOIntel Help
 The general help of NEKOIntel.
 help [module_name] *[subcommand_name]
 |   Provides the help of [module_name].
@@ -64,7 +66,8 @@ help [模块名] *[子命令]
 ]
 
 HELP_PRESET = [
-    '''NEKOIntel Presets
+    '''
+NEKOIntel Presets
 Presets are a set of available pre-configured module chain to automate the job.
 preset new [preset_file_name]
 |   Defines a new chain preset.
@@ -79,7 +82,8 @@ preset get [preset_name](Upcoming.)
 preset search [key_word](Upcoming.)
 |   Search [keyword] from online presets database.
 ''',
-    '''猫情报 预设
+    '''
+猫情报 预设
 预设是一系列可用的预设工具链，用于简化和自动化侦察过程。
 preset new [预设文件名]
 |   生成一个新的工具链预设。
@@ -91,13 +95,14 @@ preset list
 |   显示所有本地可用的预设。
 preset get [预设名称] (即将上线)
 |   将一个在线预设下载至本地的presets/文件夹。
-preset search [关键字] (即将上线)
+preset find [关键字] (即将上线)
 |   根据关键字搜索在线预设。
 ''',
 ]
 
 HELP_MODULES = [
-    '''NEKOIntel Modules.
+    '''
+NEKOIntel Modules.
 Modules are independent scanners or gadgets that composes a chain.
 They can be downloaded from the database, or made from scratch.
 There's 3 categories of modules: domain, host, gadget.
@@ -113,12 +118,42 @@ modules list *[category]
 |   |   modules list - Shows all modules.
 modules search [key_word]
 |   Searches modules by [key_word].
-modules insert [module_name group_name] [CHAIN_ID]
-|   Inserts module [module_name] or group [group_name] into chain [CHAIN_ID].
+modules insert [module_name group_name] [CHAIN_ID] [sequence]
+|   Inserts module [module_name] or group [group_name] into chain [CHAIN_ID] by [sequence].
 modules pop [CHAIN_ID] [module_id]
 |   Removes the [module_id]th module from [CHAIN_ID].
-|   If the module is in a group, it will be removed from the group, but the group preset will be intact.
-modules   
+|   If the module is in a group, it will be removed from the group, but the group preset will be intact.   
+modules find [key_word] (Upcoming.)
+|   Searches the module that matches [key_word] from online database.
+modules get [module_name] (Upcoming)
+|   Downloads the module with name of [module_name].
+modules delete [module_name]
+|   Permanently deletes the local module by name [module_name].
 ''',
-    ''''''
+    '''
+猫情报 模块。
+模块是独立的扫描器或者小工具，它们组成工具链。它们可以被从在线数据库下载，或者从零开始编写。
+模块有三种类型，domain, host, gadget。
+Domain模块用于收集域名相关信息，host模块收集主机情报，而gadget模块被用来串连整个工具链，或者提供输出。
+Domain模块总是被最先执行，无论工具链内的顺序，host其次。成组的模块会被并行运行。Gadgets可以被放在工具链的任何部分，但是无法被加入组内。
+同组内的模块共享同样的设置，如果未被单独设定，而组外的模块共享同样的参数。单独模块的设定可以被各自设定。
+modules list *[分类]
+|   显示分类(domain, host, gadget)内的所有可用模块。如果分类参数未被设定，将会输出所有可用的模块。
+|   示例:
+|   |   modules list domain - 列出所有domain模块。
+|   |   modules list - 显示所有模块。
+modules search [关键字]
+|   根据[关键字]搜索模块。
+modules insert [模块名 组名] [链] [顺序]
+|   在[CHAIN_ID]链内将[模块名 组名]插入到第[顺序]个位置。
+modules pop [CHAIN_ID] [module_id]
+|   从[CHAIN_ID]内移除[module_id]。
+|   如果模组在组内，它将会被从组内移除，但是组预设将不会被修改。
+modules find [关键字] (即将上线)
+|   在线上数据库根据[关键字]搜索可用模块。
+modules get [模组名] (即将上线)
+|   从线上数据库下载名为[模组名]的模块。
+modules delete [模组名]
+|   在本地永久删除名为[模组名]的模块。
+'''
 ]

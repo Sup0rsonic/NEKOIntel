@@ -17,6 +17,7 @@ class HelpLib:
     # Parses the help command into array.
     def parse_help(self, help_cmd):
         cmd = help_cmd.strip(' ').split()
+        print(cmd)
         if not len(cmd):
             help(help_modules['help'])
         elif cmd[0] not in help_modules.keys():
@@ -28,7 +29,13 @@ class HelpLib:
             if type(help_modules[cmd[0]]) == str:
                 help(help_modules[cmd[0]])
             else:
-                help(help_modules[cmd[0]][cmd[1]])
+                print(type(help_modules[cmd[0]]))
+                if type(help_modules[cmd[0]]) == list:
+                    help(help_modules[cmd[0]])
+                else:
+                    if type(help_modules[cmd[0]]) == dict:
+                        if help_modules[cmd[1]] in help_modules[cmd[0]].keys():
+                            help(cmd[0][cmd[1]])
         else:
             # When a "?" occurs, it doesn't mean if there's a problem,
             # it's more about "what the fuck is wrong with you?".
@@ -39,3 +46,4 @@ class HelpLib:
 
 if __name__ == '__main__':
     helplib = HelpLib()
+    helplib.parse_help('help meow meow')

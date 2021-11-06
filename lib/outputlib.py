@@ -15,7 +15,7 @@ FG_NEKOINTEL = fg(168)
 
 COLOR_RESET = attr('reset')
 
-PS1 = f'{FG_NEKOINTEL}[ NEKOIntel ] {COLOR_RESET + FG_PINK} %CHAIN% {COLOR_RESET} $ '
+PS1 = f'{FG_NEKOINTEL}[ NEKOIntel ] {COLOR_RESET + FG_PINK} %CWD% {COLOR_RESET} $ '
 
 def info(content):
     print(f'{FG_BLUE}[{" 信息 " if OUTPUTLIB_LANG else " INFO "}] {COLOR_RESET + content[OUTPUTLIB_LANG]}')
@@ -37,15 +37,15 @@ def help(content):
     print(f'{FG_BLUE}[{" 帮助 " if OUTPUTLIB_LANG else " HELP "}] {COLOR_RESET + content[OUTPUTLIB_LANG]}')
     return
 
-def critical(content, exit_code=255):
-    print(f'{FG_YELLOW}[{" 致命 " if OUTPUTLIB_LANG else " CRIT "}] {COLOR_RESET + content[OUTPUTLIB_LANG]}')
+def fatal(content, exit_code=255):
+    print(f'{FG_YELLOW}[{" 致命 " if OUTPUTLIB_LANG else " FATAL "}] {COLOR_RESET + content[OUTPUTLIB_LANG]}')
     if exit_code:
         exit(int(exit_code))
     return
 
 def debug(content):
     if IS_DEBUG:
-        print(f'{FG_BLUE}[{" 调试 " if OUTPUTLIB_LANG else " DEBG "}] {COLOR_RESET + content[OUTPUTLIB_LANG]}')
+        print(f'{FG_BLUE}[{" 调试 " if OUTPUTLIB_LANG else " DEBG "}] {COLOR_RESET + content}')
     return
 
 def prompt(content):
@@ -57,7 +57,7 @@ def test():
     ok(test_string)
     warning(test_string)
     error(test_string)
-    critical(test_string, 0)
+    fatal(test_string, 0)
     debug(test_string)
     prompt(['OwO', 'QwQ'])
 
